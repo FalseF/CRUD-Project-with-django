@@ -1,0 +1,9 @@
+{% extends 'firstapp\base.html' %}
+{% block body_block %}
+   Employee Form 
+   <form action="" method="POST"> 
+     {{employeeform.as_p}}
+     {% csrf_token %}
+    <input type ="submit" submit="submit" value="New Employee">
+   </form>
+{% endblock %}
